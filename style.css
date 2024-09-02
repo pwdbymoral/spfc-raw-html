@@ -1,0 +1,237 @@
+.container {
+  padding: 1rem 2rem;
+}
+
+.header {
+  background-color: rgb(1, 1, 1);
+  color: white;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inicio > div > h2 {
+  padding-bottom: 0.5rem;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag__photo {
+  width: 18rem;
+  height: 10rem;
+  border: #ccc 1px solid;
+  display: grid;
+}
+
+.flag__1 {
+  background-color: #c00;
+}
+
+.flag__2 {
+  background-color: white;
+}
+
+.flag__3 {
+  background-color: black;
+}
+
+.titulos > h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.titulos__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.titulos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: #ccc 1px solid;
+  padding: 1rem;
+  background-color: #900;
+  color: white;
+}
+
+.titulos__item > h3 {
+  text-align: center;
+  font-size: 0.85rem;
+}
+.titulos__item > p {
+  border-radius: 100%;
+  background-color: #eee;
+  color: #900;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.morumbi {
+  background-color: #333;
+  color: #ddd;
+}
+
+.morumbi > h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.morumbi__photo {
+  border-radius: 1rem;
+}
+
+.morumbi__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.morumbi__text {
+  margin: auto 0;
+}
+
+.footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer__link {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: #eee;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(to right, #dc0000, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Reset básico para uniformizar estilos entre navegadores */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
